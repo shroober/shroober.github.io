@@ -10,6 +10,29 @@
     <!-- Add this to your index.html inside <head> or before closing </body> -->
     <script>
       // Theme Toggle Functionality
+
+        document.addEventListener('DOMContentLoaded', () => {
+          const themeToggle = document.getElementById('theme-toggle');
+          const body = document.body;
+        
+          // Check for saved theme or respect OS preference
+          if (localStorage.getItem('theme') === 'light' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: light)').matches)) {
+            body.classList.add('light-mode');
+          }
+        
+          themeToggle.addEventListener('click', () => {
+            body.classList.toggle('light-mode');
+            // Save theme preference
+            if (body.classList.contains('light-mode')) {
+              localStorage.setItem('theme', 'light');
+            } else {
+              localStorage.setItem('theme', 'dark');
+            }
+          });
+        });
+
+        
+        /*
       document.addEventListener('DOMContentLoaded', function() {
         const themeToggle = document.getElementById('theme-toggle');
         const body = document.body;
@@ -33,7 +56,7 @@
           }
         });
       });
-      
+     */
       // Smooth Scrolling for Navigation Links
       document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
@@ -162,6 +185,19 @@
 <body>
 
     <!-- Add this to your navigation in index.html -->
+<!-- Navbar HTML -->
+<nav>
+  <div class="logo">John Doe</div>
+  <ul class="nav-links">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#blog">Blog</a></li>
+  </ul>
+  <button id="theme-toggle" aria-label="Toggle theme">🌙</button> <!-- Dark mode toggle -->
+</nav>
+    
+    <!--
 <nav>
   <div class="logo">
     <h1>John Doe</h1>
@@ -182,6 +218,8 @@
     <span></span>
   </div>
 </nav>
+
+    -->
 
     <main>
         <!-- Hero Section -->
