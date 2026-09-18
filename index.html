@@ -3,112 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>John Doe | Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Researcher Name | Biotech Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for Icons (optional, but good for LinkedIn/GitHub icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <nav class="navbar">
-        <div class="nav-container">
-            <a href="index.html" class="logo">John Doe</a>
-            <ul class="nav-menu">
-                <li><a href="index.html" class="nav-link active">Home</a></li>
-                <li><a href="about.html" class="nav-link">About</a></li>
-                <li><a href="cv.html" class="nav-link">CV</a></li>
-                <li><a href="projects.html" class="nav-link">Projects</a></li>
-                <li><a href="blog.html" class="nav-link">Blog</a></li>
-            </ul>
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-        </div>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">&lt;Dr. Name /&gt;</div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#cv">CV</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button id="theme-toggle" aria-label="Toggle Dark Mode">
+            <i class="fas fa-sun"></i>
+        </button>
     </nav>
 
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Hi, I'm John Doe</h1>
-            <p class="tagline">Full-Stack Developer & UI/UX Designer</p>
-            <p class="description">I build beautiful, functional web experiences that make a difference.</p>
-            <div class="cta-buttons">
-                <a href="projects.html" class="btn btn-primary">View My Work</a>
-                <a href="cv.html" class="btn btn-secondary">Download CV</a>
+    <main>
+        <!-- Hero Section -->
+        <section id="about" class="hero">
+            <h1>Biochemical Systems & <span class="highlight">Code</span></h1>
+            <p class="typing-effect">Biotech Researcher | Python Enthusiast | Lab Safety Officer</p>
+            <div class="social-icons">
+                <a href="https://linkedin.com" target="_blank" class="social-link"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com" target="_blank" class="social-link"><i class="fab fa-github"></i></a>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="featured-section">
-        <h2>Featured Projects</h2>
-        <div class="projects-grid">
-            <div class="project-card">
-                <div class="project-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></div>
-                <div class="project-content">
-                    <h3>E-Commerce Platform</h3>
-                    <p>A modern online shopping experience built with React and Node.js</p>
-                    <div class="tech-stack">
-                        <span>React</span>
-                        <span>Node.js</span>
-                        <span>MongoDB</span>
-                    </div>
-                </div>
+        <!-- CV Section -->
+        <section id="cv" class="content-section">
+            <h2 class="section-title">Curriculum Vitae</h2>
+            
+            <div class="card">
+                <h3>Experience</h3>
+                <ul class="cv-list">
+                    <li>
+                        <span class="role">Research Associate</span>
+                        <span class="org">Genomics Corp, 2021-Present</span>
+                        <p>Leading CRISPR screening workflows and analyzing large datasets using Python.</p>
+                    </li>
+                    <li>
+                        <span class="role">Lab Assistant</span>
+                        <span class="org">University of Bio-Science, 2019-2021</span>
+                        <p>Assisted in protein purification and maintained inventory logs.</p>
+                    </li>
+                </ul>
             </div>
-            <div class="project-card">
-                <div class="project-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);"></div>
-                <div class="project-content">
-                    <h3>Task Management App</h3>
-                    <p>Collaborative task management with real-time updates</p>
-                    <div class="tech-stack">
-                        <span>Vue.js</span>
-                        <span>Firebase</span>
-                        <span>Vuex</span>
-                    </div>
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="project-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);"></div>
-                <div class="project-content">
-                    <h3>Portfolio Dashboard</h3>
-                    <p>Investment tracking and visualization platform</p>
-                    <div class="tech-stack">
-                        <span>Next.js</span>
-                        <span>D3.js</span>
-                        <span>API</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <section class="stats-section">
-        <div class="stat">
-            <h3>5+</h3>
-            <p>Years Experience</p>
-        </div>
-        <div class="stat">
-            <h3>50+</h3>
-            <p>Projects Completed</p>
-        </div>
-        <div class="stat">
-            <h3>30+</h3>
-            <p>Happy Clients</p>
-        </div>
-        <div class="stat">
-            <h3>15+</h3>
-            <p>Awards Won</p>
-        </div>
-    </section>
-
-    <footer>
-        <div class="footer-content">
-            <p>&copy; 2026 John Doe. All rights reserved.</p>
-            <div class="social-links">
-                <a href="#">GitHub</a>
-                <a href="#">LinkedIn</a>
-                <a href="#">Twitter</a>
+            <div class="card">
+                <h3>Education</h3>
+                <ul class="cv-list">
+                    <li>
+                        <span class="role">M.S. in Bioinformatics</span>
+                        <span class="org">Tech University, 2021</span>
+                    </li>
+                    <li>
+                        <span class="role">B.S. in Molecular Biology</span>
+                        <span class="org">State College, 2019</span>
+                    </li>
+                </ul>
             </div>
-        </div>
-    </footer>
+        </section>
 
-    <script src="script.js"></script>
-</body>
-</html>
+        <!-- Projects Section -->
+        <section id="projects" class="content-section">
+            <h2 class="section-title">Projects</h2>
+            <div class="project-grid">
+                <!-- Project 1 -->
+<div class="project-card">
+<h3>PCR Automation Script</h3>
+<p class="tech-stack">Python, Pandas, Automation</p>
+<p>Created a script to automate PCR setup data entry and thermal cycling logs, saving 5 hours per week.</p>
+<a href="#" class="btn">View Code</a>
+</div>
+<!-- Project 2 -->
+              <div class="project-card"> <h3>Genome Viz Dashboard</h3> 
+                <p class="tech-stack">JavaScript, D3.js, HTML5</p> 
+                <p>An interactive dashboard visualizing gene expression data for lab meetings.</p> <a href="#" class="btn">View Demo</a> </div> 
+              
+<!-- Project 3 --> <div class="project-card"> 
+  <h3>Lab Inventory API</h3> <p class="tech-stack">Flask, SQL, REST</p> <p>Backend API for tracking chemical inventory levels and expiry dates.</p> 
+  <a href="#" class="btn">View Docs</a> </div> </div> </section> <!-- Contact Section --> 
+
+<section id="contact" class="content-section"> 
+        
+<h2 class="section-title">Contact</h2> <p>Open for research collaborations and dev projects.</p> <a href="mailto:email@example.com" class="highlight-link">email@example.com</a> </section> 
+      
+      
+      <footer> <p>&copy; 2025 Researcher Name. Hosted on GitHub Pages.</p> </footer> </main> <script src="script.js"></script></body> </html>
