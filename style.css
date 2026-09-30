@@ -134,6 +134,28 @@ nav {
     50% { border-color: transparent; }
 }
 
+/* --- Social Buttons --- */
+.social-link {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.social-icons {
+    padding: 0.8rem 1.5rem; /* Increased size */
+    background-color: var(--primary-color); /* Green color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.4s;
+    font-size: 1rem;
+}
+
+.social-icons:hover {
+    background-color: #006400; /* Darker green on hover */
+}
+
 /* --- Cards & Sections --- */
 .content-section {
     padding: 4rem 5%;
