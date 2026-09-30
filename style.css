@@ -82,7 +82,8 @@ nav {
 
 .nav-links a:hover {
     color: var(--primary-color);
-    text-decoration: underline;
+    text-decoration: bold;
+    size: 24px; /* Navbar text size */
 }
 
 /* --- Theme Toggle Button --- */
@@ -194,11 +195,13 @@ nav {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.4s;
-    font-size: 5rem;
+    font-size: 3rem;
+    text-decoration:none;
 }
 
 .social-icons:hover {
-    background-color: #006400; /* Darker green on hover */
+    /*background-color: #006400; /* Darker green on hover */
+    color: #00cc00;
 }
 
 /* --- Cards & Sections --- */
@@ -291,6 +294,12 @@ nav {
 .btn:hover {
     background: var(--primary-color);
     color: var(--bg-color);
+}
+
+/* --- Contact Link --- */
+
+#contact-link {
+    color: var(--primary-color);
 }
 
 /* --- Footer --- */
