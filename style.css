@@ -86,6 +86,10 @@ nav {
     size: 24px; /* Navbar text size */
 }
 
+.content-section {
+  padding-top: 80px; /* Adjust based on navbar height */
+}
+
 /* --- Theme Toggle Button --- */
 #theme-toggle {
     background: transparent;
