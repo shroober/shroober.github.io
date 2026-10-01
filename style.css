@@ -58,7 +58,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.5rem 5%;
+    padding: 1rem 2%;
     background: rgba(13, 13, 13, 0.9);
     position: sticky;
     top: 0;
@@ -84,10 +84,6 @@ nav {
     color: var(--primary-color);
     text-decoration: bold;
     size: 24px; /* Navbar text size */
-}
-
-.content-section {
-  padding-top: 80px; /* Adjust based on navbar height */
 }
 
 /* --- Theme Toggle Button --- */
