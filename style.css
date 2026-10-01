@@ -35,6 +35,7 @@ body {
     font-family: var(--font-ui);
     line-height: 1.6;
     transition: background-color 0.4s, color 0.4s;
+    zoom: 1.5;
 }
 
 /* --- Typography --- */
@@ -84,6 +85,10 @@ nav {
     color: var(--primary-color);
     text-decoration: bold;
     size: 24px; /* Navbar text size */
+}
+
+.content-section {
+    padding-top:60px;
 }
 
 /* --- Theme Toggle Button --- */
@@ -199,7 +204,7 @@ nav {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.4s;
-    font-size: 2rem;
+    font-size: 4rem;
     text-decoration:none;
 }
 
@@ -304,6 +309,10 @@ nav {
 
 #contact-link {
     color: var(--primary-color);
+}
+
+#contact-link:hover {
+    color: yellow;
 }
 
 /* --- Footer --- */
