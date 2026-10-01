@@ -125,6 +125,7 @@ nav {
 .typing-effect {
     font-size: 1.2rem;
     font-family: "Courier", monospace;
+    text-decoration: bold;
     margin-bottom: 2rem;
     border-right: 2px solid var(--primary-color);
     white-space: nowrap;
@@ -184,7 +185,7 @@ nav {
 
 /* --- Social Buttons --- */
 .social-link {
-    display: flex;
+    display: inline-flex;
     gap: 1rem;
     margin-top: 2rem;
     text-decoration:none;
@@ -204,7 +205,7 @@ nav {
 
 .social-link:hover {
     /*background-color: #006400; /* Darker green on hover */
-    color: #00cc00;
+    color: #006400;
 }
 
 /* --- Cards & Sections --- */
@@ -233,9 +234,6 @@ nav {
 
 .cv-list {
     list-style: none;
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
 .cv-list li {
