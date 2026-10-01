@@ -45,12 +45,12 @@ h1, h2, h3, .logo, .tech-stack {
 
 .logo {
     color: white;
-    font-size: 24px;
+    font-size: 22px;
 }
 
 .highlight {
     color: #00cc00;
-    text-shadow: 0 0 5px #00cc00;
+    text-shadow: 0 0 4px #00cc00;
 }
 
 /* --- Navigation --- */
@@ -124,6 +124,7 @@ nav {
 
 .typing-effect {
     font-size: 1.2rem;
+    font-family: "Courier", monospace;
     margin-bottom: 2rem;
     border-right: 2px solid var(--primary-color);
     white-space: nowrap;
@@ -186,6 +187,8 @@ nav {
     display: flex;
     gap: 1rem;
     margin-top: 2rem;
+    text-decoration:none;
+    color: #00CC00;
 }
 
 .social-icons {
@@ -195,11 +198,11 @@ nav {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.4s;
-    font-size: 3rem;
+    font-size: 2rem;
     text-decoration:none;
 }
 
-.social-icons:hover {
+.social-link:hover {
     /*background-color: #006400; /* Darker green on hover */
     color: #00cc00;
 }
@@ -230,6 +233,9 @@ nav {
 
 .cv-list {
     list-style: none;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
 .cv-list li {
