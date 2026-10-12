@@ -4,7 +4,8 @@
     --bg-color: #0d0d0d;
     --text-color: #e0e0e0;
     --card-bg: #1a1a1a;
-    --font-main: 'Courier New', Courier, monospace; /* Hacker vibe */
+  /*  --font-main: 'Courier New', Courier, monospace; /* Hacker vibe */ 
+    --font-main: Candara, monospace; /* Hacker vibe */
     --font-ui: system-ui, -apple-system, sans-serif;
     --border-color: #333;
 }
