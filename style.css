@@ -1,14 +1,14 @@
 /* --- CSS Variables & Theme Config --- */
 :root {
     --primary-color: #006400; /* Darker green for readability */
-    --bg-color: #f4f4f4;
+    --bg-color: #eafcea; /*tried: f4f4f4*/
     --text-color: #1a1a1a;
-    --card-bg: #E6FFE6;
+    --card-bg: #f4f4f4; /*tried: E6FFE6 */
     --border-color: #ddd;
 
   /*  --font-main: 'Courier New', Courier, monospace; /* Hacker vibe */ 
-    --font-main: Candara, monospace; /* Hacker vibe */
-    --font-ui: system-ui, -apple-system, sans-serif;
+    --font-main: Candara, Palatino Linotype, monospace;  /*Candara was tried*/
+    --font-ui: Palatino Linotype, system-ui, -apple-system, sans-serif;
 }
 
 /* Light Mode Overrides */ /*Actually dark mode now*/
@@ -51,6 +51,10 @@ body.light-mode {
 
 body.light-mode .nav-links a {
   color: white; /* Ensures navbar text is white in light mode */
+}
+
+.nav-links a {
+  color: white; /* Ensures navbar text is white in dark mode */
 }
 
 /* --- Global Reset & Layout --- */
