@@ -1,23 +1,53 @@
 /* --- CSS Variables & Theme Config --- */
 :root {
+    --primary-color: #006400; /* Darker green for readability */
+    --bg-color: #f4f4f4;
+    --text-color: #1a1a1a;
+    --card-bg: #E6FFE6;
+    --border-color: #ddd;
+
+  /*  --font-main: 'Courier New', Courier, monospace; /* Hacker vibe */ 
+    --font-main: Candara, monospace; /* Hacker vibe */
+    --font-ui: system-ui, -apple-system, sans-serif;
+}
+
+/* Light Mode Overrides */ /*Actually dark mode now*/
+body.light-mode {
     --primary-color: #00cc00; /* The specific neon green */
     --bg-color: #0d0d0d;
     --text-color: #e0e0e0;
     --card-bg: #1a1a1a;
+    --border-color: #333;
+}
+
+
+/* scrapped
+
+:root {
+    --primary-color: #00cc00; /* The specific neon green */
+/*
+    --bg-color: #0d0d0d;
+    --text-color: #e0e0e0;
+    --card-bg: #1a1a1a;
   /*  --font-main: 'Courier New', Courier, monospace; /* Hacker vibe */ 
+/*
     --font-main: Candara, monospace; /* Hacker vibe */
+/*
     --font-ui: system-ui, -apple-system, sans-serif;
     --border-color: #333;
 }
 
 /* Light Mode Overrides */
+/*
 body.light-mode {
     --primary-color: #006400; /* Darker green for readability */
+/*
     --bg-color: #f4f4f4;
     --text-color: #1a1a1a;
     --card-bg: #ffffff;
     --border-color: #ddd;
 }
+*/ 
 
 body.light-mode .nav-links a {
   color: white; /* Ensures navbar text is white in light mode */
