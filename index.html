@@ -3,23 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Researcher Name | Biotech Portfolio</title>
+    <title>Cyrus | Researcher</title>
     <link rel="stylesheet" href="style.css">
-    <!-- Font Awesome for Icons (optional, but good for LinkedIn/GitHub icons) -->
+    <!-- Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <!-- Add this to your index.html inside <head> or before closing </body> -->
     <script>
-      // Theme Toggle Functionality
-
+      // Theme Toggle FunctionalityZ
         document.addEventListener('DOMContentLoaded', () => {
           const themeToggle = document.getElementById('theme-toggle');
           const body = document.body;
-        
           // Check for saved theme or respect OS preference
           if (localStorage.getItem('theme') === 'light' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: light)').matches)) {
             body.classList.add('light-mode');
           }
-        
           themeToggle.addEventListener('click', () => {
             body.classList.toggle('light-mode');
             // Save theme preference
@@ -30,38 +26,10 @@
             }
           });
         });
-
-        
-        /*
-      document.addEventListener('DOMContentLoaded', function() {
-        const themeToggle = document.getElementById('theme-toggle');
-        const body = document.body;
-        
-        // Check for saved theme preference or respect OS preference
-        const savedTheme = localStorage.getItem('theme');
-        const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
-        
-        if (savedTheme === 'dark' || (!savedTheme && prefersDarkScheme.matches)) {
-          body.classList.add('dark-mode');
-        }
-        
-        themeToggle.addEventListener('click', function() {
-          body.classList.toggle('dark-mode');
-          
-          // Save preference
-          if (body.classList.contains('dark-mode')) {
-            localStorage.setItem('theme', 'dark');
-          } else {
-            localStorage.setItem('theme', 'light');
-          }
-        });
-      });
-     */
       // Smooth Scrolling for Navigation Links
       document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
           e.preventDefault();
-          
           const target = document.querySelector(this.getAttribute('href'));
           if (target) {
             window.scrollTo({
@@ -94,6 +62,7 @@
       });
     </script>
     <script>
+/* experimenting with disabling the below script, seems redundant
   // Mobile Navigation Toggle
   const hamburger = document.querySelector('.hamburger');
   const navLinks = document.querySelector('.nav-links');
@@ -112,13 +81,10 @@
       spans[1].style.opacity = '1';
       spans[2].style.transform = 'none';
     }
-  });
-</script>
-    <!-- Update your CSS with these additions -->
+  }); */
+  </script>
     <style>
-      /* Add to existing CSS */
-      
-      /* Responsive Navigation */
+    /* Responsive Navigation for Mobile */
       @media (max-width: 768px) {
         .nav-links {
           position: fixed;
@@ -136,7 +102,8 @@
         .nav-links.active {
           left: 0;
         }
-        
+
+          /*
         .hamburger {
           display: block;
           cursor: pointer;
@@ -150,6 +117,7 @@
           transition: 0.3s;
           background: var(--primary-color);
         }
+          */ 
         
         /* Mobile Hero Section */
         .hero {
@@ -183,8 +151,6 @@
     </style>
 </head>
 <body>
-
-    <!-- Add this to your navigation in index.html -->
 <!-- Navbar HTML -->
 <nav>
   <div class="logo">John Doe</div>
@@ -198,36 +164,12 @@
   </ul>
   <button id="theme-toggle" aria-label="Toggle theme">🌙</button> <!-- Dark mode toggle -->
 </nav>
-    
-    <!--
-<nav>
-  <div class="logo">
-    <h1>John Doe</h1>
-  </div>
-  <ul class="nav-links">
-    <li><a href="#home">Home</a></li>
-    <li><a href="#about">About</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#blog">Blog</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><button id="theme-toggle" class="theme-toggle">
-      <span class="theme-icon">🌙</span>Toggle Theme
-    </button></li>
-  </ul>
-  <div class="hamburger">
-    <span></span>
-    <span></span>
-    <span></span>
-  </div>
-</nav>
-
-    -->
 
     <main>
         <!-- Hero Section -->
         <section class="hero">
             <h1>Cyrus <span class="highlight">Peace</span></h1>
-            <p class="typing-effect">Academic | Creative | Coder</p>
+            <p class="typing-effect">Researcher | Biologist | Coder</p>
             <div class="social-icons">
                 <a href="https://linkedin.com" target="_blank" class="social-link"><i class="fab fa-linkedin"></i></a>
                 <a href="https://github.com" target="_blank" class="social-link"><i class="fab fa-github"></i></a>
@@ -251,19 +193,25 @@
         <!-- CV Section -->
         <section id="cv" class="content-section">
             <h2 class="section-title">Curriculum Vitae</h2>
-            
+
+            <!-- CV Section -->
             <div class="card">
                 <h3>Experience</h3>
                 <ul class="cv-list">
                     <li>
-                        <span class="role">Research Associate</span>
-                        <span class="org">Genomics Corp, 2021-Present</span>
-                        <p>Leading CRISPR screening workflows and analyzing large datasets using Python.</p>
+                        <span class="role">Tier 2 and Phase 0 Operations</span>
+                        <span class="org">Sportradar, 2019-Present</span>
+                        <p>Data management of sports statistics and play-by-play breakdowns for major professional sports organizations.</p>
                     </li>
                     <li>
-                        <span class="role">Lab Assistant</span>
-                        <span class="org">University of Bio-Science, 2019-2021</span>
-                        <p>Assisted in protein purification and maintained inventory logs.</p>
+                        <span class="role">Teaching Assistant</span>
+                        <span class="org">Temerty Faculty of Medicine, University of Toronto, 2024-2025</span>
+                        <p>MED100, MED120, MED130 – Introduction to Medicine; Concepts, Patients and Communities. Guided cadaveric dissection and anatomy laboratory sessions for medical students.</p>
+                    </li>
+                    <li>
+                        <span class="role">Chairman of the Board of Directors</span>
+                        <span class="org">Campus Co-operative Residences, 2022-2024</span>
+                        <p>Chaired board meetings, strategic planning, recruiting and hiring employees, working with 243 tenants; community advocacy and event organizing; overhauled corporate structure resulting in a turnaround from a net $200k deficit to a net $30k surplus.</p>
                     </li>
                 </ul>
             </div>
@@ -272,12 +220,20 @@
                 <h3>Education</h3>
                 <ul class="cv-list">
                     <li>
-                        <span class="role">M.S. in Bioinformatics</span>
-                        <span class="org">Tech University, 2021</span>
+                        <span class="role">Certificate</span>
+                        <span class="role">Deploying Artificial Intelligence</span>
+                        <span class="org">University of Toronto, 2025</span>
                     </li>
                     <li>
-                        <span class="role">B.S. in Molecular Biology</span>
-                        <span class="org">State College, 2019</span>
+                        <span class="role">Masters of Science</span>
+                        <span class="role">Evolutionary Anthropology</span>
+                        <span class="role"> Using Machine Learning and Ecological Niche Modelling to Identify Sites of Neanderthal Fossil Deposition</span>
+                        <span class="org">University of Toronto, 2025</span>
+                    </li>
+                    <li>
+                        <span class="role">Honours Bachelor's of Science with Distinction</span>
+                        <span class="role">Human Biology and Evolutionary Anthropology</span>
+                        <span class="org">University of Toronto, 2023</span>
                     </li>
                 </ul>
             </div>
@@ -287,6 +243,9 @@
         <section id="projects" class="content-section">
             <h2 class="section-title">Projects</h2>
             <div class="project-grid">
+
+<!-- Publications
+
 <!-- Project 1 -->
 <div class="project-card">
 <h3>PCR Automation Script</h3>
@@ -297,18 +256,22 @@
 <!-- Project 2 -->
               <div class="project-card"> <h3>Genome Viz Dashboard</h3> 
                 <p class="tech-stack">JavaScript, D3.js, HTML5</p> 
-                <p>An interactive dashboard visualizing gene expression data for lab meetings.</p> <a href="#" class="btn">View Demo</a> </div> 
-              
-<!-- Project 3 --> <div class="project-card"> 
-  <h3>Lab Inventory API</h3> <p class="tech-stack">Flask, SQL, REST</p> <p>Backend API for tracking chemical inventory levels and expiry dates.</p> 
-  <a href="#" class="btn">View Docs</a> </div> </div> </section>
-        
+                <p>An interactive dashboard visualizing gene expression data for lab meetings.</p>
+                  <a href="#" class="btn">View Demo</a> </div> 
 
+      <!-- Polyglot? -->         
+<!-- Project 3  <div class="project-card"> --> 
+  <!-- <h3>Lab Inventory API</h3> <p class="tech-stack">Flask, SQL, REST</p>
+    <p>Backend API for tracking chemical inventory levels and expiry dates.</p> 
+  <a href="#" class="btn">View Docs</a> </div> </div> </section>
+--> 
+    
 <!-- Contact Section --> 
 
 <section id="contact" class="content-section"> 
         
-<h2 class="section-title">Contact</h2> <p>Open for research collaborations and dev projects.</p> <a href="mailto:email@example.com" class="highlight-link">email@example.com</a> </section> 
+<h2 class="section-title">Contact</h2> <p>Open for research internships and development projects.</p>
+    <a href="mailto:email@example.com" class="highlight-link">cyrus[dot]alzayadi[at]gmail.com</a> </section> 
       
       
       <footer> <p>&copy; 2025 Researcher Name. Hosted on GitHub Pages.</p> </footer> </main> <script src="script.js"></script></body> </html>
