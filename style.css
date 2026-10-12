@@ -7,8 +7,8 @@
     --border-color: #ddd;
 
   /*  --font-main: 'Courier New', Courier, monospace; /* Hacker vibe */ 
-    --font-main: Candara, Palatino Linotype, monospace;  /*Candara was tried*/
-    --font-ui: Palatino Linotype, system-ui, -apple-system, sans-serif;
+    --font-main: Candara, 'Gill Sans', 'Courier New', monospace;  /*Candara was tried*/
+    --font-ui: Futura, system-ui, -apple-system, sans-serif;
 }
 
 /* Light Mode Overrides */ /*Actually dark mode now*/
