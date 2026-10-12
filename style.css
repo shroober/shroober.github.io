@@ -1,7 +1,7 @@
 /* --- CSS Variables & Theme Config --- */
 :root {
     --primary-color: #006400; /* Darker green for readability */
-    --bg-color: #eafcea; /*tried: f4f4f4*/
+    --bg-color: #cfe3cf; /*tried: f4f4f4, eafcea(mintgreen), dceaf2 (cloudblue)*/
     --text-color: #1a1a1a;
     --card-bg: #f4f4f4; /*tried: E6FFE6 */
     --border-color: #ddd;
@@ -110,7 +110,11 @@ nav {
 
 .nav-links a {
     text-decoration: none;
+    color: white;
+
+    /*
     color: var(--text-color);
+    */
     font-family: var(--font-main);
     font-weight: bold;
     transition: color 0.4s;
