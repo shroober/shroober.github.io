@@ -1,7 +1,7 @@
 /* --- CSS Variables & Theme Config --- */
 :root {
     --primary-color: #006400; /* Darker green for readability */
-    --bg-color: #cfe3cf; /*tried: f4f4f4, eafcea(mintgreen), dceaf2 (cloudblue)*/
+    --bg-color: #e1f5e1; /*tried: f4f4f4, eafcea(mintgreen), dceaf2 (cloudblue), cfe3cf(mintgreen2)*/
     --text-color: #1a1a1a;
     --card-bg: #f4f4f4; /*tried: E6FFE6 */
     --border-color: #ddd;
